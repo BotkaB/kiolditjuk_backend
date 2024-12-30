@@ -1,0 +1,87 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "kizold_orai",
+    "collectionId": "0cfcca75-82bb-4591-b83b-747a8af7e345",
+    "dateExported": "2024-12-30T16:39:21.931Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6c68f0b1-0bf8-4235-89c8-3731c349ce99",
+            "colId": "0cfcca75-82bb-4591-b83b-747a8af7e345",
+            "containerId": "",
+            "name": "getBejegyzesek",
+            "url": "bejegyzesek",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-12-30T15:22:17.217Z",
+            "modified": "2024-12-30T15:22:28.160Z",
+            "headers": []
+        },
+        {
+            "_id": "e5a14222-475a-4ef3-b8e2-d335c447f46d",
+            "colId": "0cfcca75-82bb-4591-b83b-747a8af7e345",
+            "containerId": "",
+            "name": "getBejegyzesekOsztaly",
+            "url": "bejegyzesek/1b",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-12-30T15:29:00.110Z",
+            "modified": "2024-12-30T16:39:09.375Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "osztaly_nev",
+                    "value": "1b",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "2a54458d-ed65-4f7a-ab2f-694a62f3616b",
+            "colId": "0cfcca75-82bb-4591-b83b-747a8af7e345",
+            "containerId": "",
+            "name": "getTevekenysegek",
+            "url": "tevekenysegek",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-12-30T15:34:52.315Z",
+            "modified": "2024-12-30T15:40:46.605Z",
+            "headers": []
+        },
+        {
+            "_id": "10d691b4-a352-455c-a0ec-6142e29ac0fe",
+            "colId": "0cfcca75-82bb-4591-b83b-747a8af7e345",
+            "containerId": "",
+            "name": "postBejegyzesek",
+            "url": "bejegyzesek",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-12-30T15:44:15.324Z",
+            "modified": "2024-12-30T15:48:25.827Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"tevekenyseg_id\": 1,\n    \"osztaly_nev\": \"1/a\",\n    \"allapot\":1\n}",
+                "form": []
+            }
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:8000/api/"
+        }
+    },
+    "ref": "CCwWRPLs_xNuASpv90WeEIiXX5wMn1op77hgItY2WpmfCwxqvRfsfR0XiakUgO7DBMxFYASoR2Gx04j8kE8eIQ"
+}

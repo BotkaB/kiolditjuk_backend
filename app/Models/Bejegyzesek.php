@@ -14,5 +14,8 @@ class Bejegyzesek extends Model
        
     ]; //
 
-    
+
+    public function tevekenyseg(){
+        return $this->belongsTo(Tevekenyseg::class, 'tevekenyseg_id', 'tevekenyseg_id');
+    }    
 }

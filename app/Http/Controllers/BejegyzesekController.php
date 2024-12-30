@@ -9,13 +9,16 @@ use Illuminate\Http\Request;
 class BejegyzesekController extends Controller
 {
     public function index(){
-        return Bejegyzesek::all();
+        $bejegyzesek=response()->json(Bejegyzesek::with('tevekenyseg')->get());
+        return $bejegyzesek;
        
     }
 
-    public function show($id){
-        return Bejegyzesek::find($id);
+    public function show($osztaly_nev){
+       
+        return Bejegyzesek::where("osztaly_nev", $osztaly_nev)->get();
     }
+    
 
     public function postBejegyzes(Request $request){
         $bejegyzes=new Bejegyzesek();
@@ -25,4 +28,5 @@ class BejegyzesekController extends Controller
 
         $bejegyzes->save();
     }
+
 }

@@ -12,7 +12,7 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/bejegyzesek', [BejegyzesekController::class,'index']);
-Route::get('/bejegyzesek/{osztaly_id}', [BejegyzesekController::class,'show']);
+Route::get('/bejegyzesek/{osztaly_nev}', [BejegyzesekController::class,'show']);
 Route::post('/bejegyzesek', [BejegyzesekController::class,'postBejegyzes']);
 
 Route::get('/tevekenysegek', [TevekenysegController::class,'index']);
